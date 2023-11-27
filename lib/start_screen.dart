@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
@@ -22,9 +23,9 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 80,
           ),
-          const Text(
+          Text(
             'Lear Flutter the fun way!',
-            style: TextStyle(
+            style: GoogleFonts.tiltNeon(
               color: Colors.white,
               fontSize: 24,
             ),
