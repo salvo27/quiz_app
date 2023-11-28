@@ -9,10 +9,12 @@ class ResultsScreen extends StatelessWidget {
     super.key,
     required this.chosenAnswers,
     required this.onRestart,
+    required this.onExit,
   });
 
   final List<String> chosenAnswers;
   final void Function() onRestart;
+  final void Function() onExit;
 
   List<Map<String, Object>> get summaryData {
     final List<Map<String, Object>> summary = [];
@@ -72,7 +74,20 @@ class ResultsScreen extends StatelessWidget {
               ),
               icon: const Icon(Icons.refresh),
               label: const Text('Restart Quiz!'),
-            )
+            ),
+            ElevatedButton.icon(
+              onPressed: onExit,
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: const Color.fromARGB(255, 255, 98, 1),
+                side: const BorderSide(
+                  color: Colors.white,
+                  width: 0.5,
+                ),
+              ),
+              icon: const Icon(Icons.exit_to_app),
+              label: const Text('Exit quiz'),
+            ),
           ],
         ),
       ),
