@@ -16,19 +16,19 @@ class StartScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
-            'assets/images/quiz-logo.png',
+            'assets/images/ac-milan-logo.png',
             width: 300,
-            color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const SizedBox(
             height: 80,
           ),
           Text(
-            'Lear Flutter the fun way!',
+            'Very important quiz on Salvatore Borda!',
             style: GoogleFonts.tiltNeon(
               color: Colors.white,
               fontSize: 24,
             ),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(
             height: 30,
